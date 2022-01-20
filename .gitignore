@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/BookStore.Api/v17/.suo
+/ProjectManagement.Api/bin/Debug/netcoreapp3.1
+/ProjectManagement.Api/obj
+/.vs/BookStore.Api/config
+/ProjectManagement.Data.Implementation/bin/Debug/netstandard2.0
+/ProjectManagement.Data.Implementation/obj
+/ProjectManagement.Entities/obj
+/ProjectManagement.Entities/bin/Debug/netstandard2.0
+/ProjectManagement.Shared/obj
+/ProjectManagement.Shared/bin/Debug/netstandard2.0
