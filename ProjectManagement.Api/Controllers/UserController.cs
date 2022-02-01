@@ -7,13 +7,14 @@ using EHealthcare.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ProjectManagement.Api.Controllers;
 using ProjectManagement.Data;
 
 namespace Ehealthcare.Api.Controllers
 {
     [Route("api/user")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UserController : BaseController<User>
     {
 
         private readonly IBaseRepository<User> UserRepository;
@@ -43,7 +44,7 @@ namespace Ehealthcare.Api.Controllers
         [AllowAnonymous]
         [HttpPost]
         [Route("login")]
-        public async Task<IActionResult> LoginUser(LoginDto login)
+        public async Task<IActionResult> LoginUser([FromBody]LoginDto login)
         {
             if (this.ModelState.IsValid)
             {
